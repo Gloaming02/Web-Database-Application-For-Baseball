@@ -33,5 +33,4 @@ Using Instructions
 PS: 
 
 1. At the top left of the page, left of the MLB picture, you can select your favorite team or switch to display the standings.
-2. CSV Files in dataFile and data.py should be in same directory 
-
+2. CSV Files in dataFile and data.py should be in same directory (suggestion: 1.cd dataFile 2. cp *.csv ..)
