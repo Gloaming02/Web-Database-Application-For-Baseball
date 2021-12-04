@@ -31,25 +31,6 @@ Using Instructions
         10. python baseball.py
     
 
-Python Modules Imported:
-import os
-import mysql.connector
-import sys
-import csv
-import csi3335fall2021
-from werkzeug.security import generate_password_hash, check_password_hash
-import sqlalchemy
-from flask import request, render_template, url_for, flash
-from flask_login import current_user, login_user, logout_user, login_required
-from sqlalchemy import and_
-from sqlalchemy.orm import aliased
-from sqlalchemy.sql.functions import concat, sysdate, func
-from werkzeug.utils import redirect
-from flask_login import UserMixin
-from flask import Flask
-from flask_login import LoginManager
-from flask_sqlalchemy import SQLAlchemy
-
 PS: 
 1. At the top left of the page, left of the MLB picture, you can select your favorite team or switch to display the standings.
 
