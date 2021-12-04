@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row row-content">
+        <h3>Team Standings for {{ selected_year }}</h3>
+        <div class="col-10 offset-1 offset-md-3 col-md-6">
+            <form action="{{ url_for('standings') }}" method="post">
+                <div class="form-group">
+                    <label for="year">Year:</label>
+                    <select class="form-control" id="year" name="year">
+                        {% for year in range(2020, 1870, -1) %}
+                        {% if year == (selected_year|int) %}
+                        <option value="{{ year }}" selected="selected">{{ year }}</option>
+                        {% else %}
+                        <option value="{{ year }}">{{ year }}</option>
+                        {% endif %}
+                        {% endfor %}
+                    </select>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="season" id="regular" value="regular" checked>
+                        <label class="form-check-label" for="regular">Regular Season</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="season" id="playoffs" value="playoffs">
+                        <label class="form-check-label" for="playoffs">Playoffs</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-4 col-md-4">
+                        <button type="submit" class="btn btn-info">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <!-- regular -->
+                    {% if regular_standings %}
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Team</th>
+                        <th>League</th>
+                        <th>Division</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>DivWin</th>
+                        <th>WCWin</th>
+                        <th>LgWin</th>
+                        <th>WSWin</th>
+                        <th>GB</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for standing in regular_standings %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ standing[0] }}</td>
+                        <td>{{ standing[1] }}</td>
+                        <td>{{ standing[2] }}</td>
+                        <td>{{ standing[3] }}</td>
+                        <td>{{ standing[4] }}</td>
+                        <td>{{ standing[5] }}</td>
+                        <td>{{ standing[6] }}</td>
+                        <td>{{ standing[7] }}</td>
+                        <td>{{ standing[8] }}</td>
+                        <td>{{ standing[9] }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    {% endif %}
+                    <!-- playoffs -->
+                    {% if playoffs_standings %}
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Round</th>
+                        <th>Winner</th>
+                        <th>Loser</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Ties</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for standing in playoffs_standings %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ standing[0] }}</td>
+                        <td>{{ standing[1] }}</td>
+                        <td>{{ standing[2] }}</td>
+                        <td>{{ standing[3] }}</td>
+                        <td>{{ standing[4] }}</td>
+                        <td>{{ standing[5] }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
