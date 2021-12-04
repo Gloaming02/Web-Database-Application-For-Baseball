@@ -4,9 +4,13 @@ Web-database application for the most recent Lahman baseball database.
 Group Project
 
 Group Name: KHz
+
 Group Member:
+
     Zhengyan Hu
+    
     Jingke Shi
+    
 
 Using Instructions
     1. unzip the project
