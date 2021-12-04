@@ -13,9 +13,10 @@ Group Member:
     
 
 Using Instructions
+
     1. unzip the project
     2. cd <project-dir>
-Set Up Environment:
+Set Up Environment:\
     3. python -m venv venv
     4  Linux/Mac: source venv/bin/activate 
         Windows: venv\Scripts\activate
@@ -29,6 +30,7 @@ Load data:
     (Before: Change csi3335fall2021.py to your database username and password)
 Run flask server:
     python baseball.py
+    
 
 Python Modules Imported:
 import os
