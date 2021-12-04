@@ -1,7 +1,6 @@
 # Web-Database-Application-For-Baseball
-Web-database application for the most recent Lahman baseball database.
+Web-database application for the most recent Lahman baseball database
 
-Group Project
 
 Group Name: KHz
 
@@ -32,6 +31,7 @@ Using Instructions
     
 
 PS: 
+
 1. At the top left of the page, left of the MLB picture, you can select your favorite team or switch to display the standings.
 
 
