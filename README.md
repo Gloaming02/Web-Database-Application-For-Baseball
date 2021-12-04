@@ -8,7 +8,6 @@ Group Name: KHz
 Group Member:
 
     Zhengyan Hu
-    
     Jingke Shi
     
 
