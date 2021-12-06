@@ -39,3 +39,5 @@ PS:
 
         1. cd dataFile/
         2. cp *.csv .. 
+
+DataFiles From http://www.seanlahman.com/baseball-archive/statistics/
