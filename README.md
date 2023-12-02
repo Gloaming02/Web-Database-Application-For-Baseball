@@ -10,10 +10,9 @@ Group Member:
     Jingke Shi
     
 
-Using Instructions
-
-        1. unzip the project
-        2. cd <project-dir>
+Before start:
+        1. cd dataFile/
+        2. cp *.csv .. 
     Set Up Environment:
         3. python -m venv venv
         4  Linux/Mac: source venv/bin/activate 
@@ -37,7 +36,5 @@ PS:
 2. CSV Files in dataFile and data.py should be in same directory
    Suggestion for moving the files:
 
-        1. cd dataFile/
-        2. cp *.csv .. 
 
 DataFiles From http://www.seanlahman.com/baseball-archive/statistics/
