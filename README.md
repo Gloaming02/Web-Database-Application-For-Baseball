@@ -9,7 +9,7 @@ Group Member:
     Zhengyan Hu
     Jingke Shi
     
-
+```
 Before start:  
         1. cd dataFile/  
         2. cp *.csv ..   
@@ -27,7 +27,7 @@ Before start:
         (Before: Change csi3335fall2021.py to your database username and password)  
     Run flask server:  
         10. python baseball.py  
-    
+```    
 
 PS: 
 
