@@ -10,23 +10,23 @@ Group Member:
     Jingke Shi
     
 
-Before start:
-        1. cd dataFile/
-        2. cp *.csv .. 
-    Set Up Environment:
-        3. python -m venv venv
-        4  Linux/Mac: source venv/bin/activate 
-           Windows: venv\Scripts\activate
-        5. pip install -r requirements.txt
-    Create database:
-        6. mysql -u root -p
-        7. source KHz.sql
-        8. exit;
-    Load data: 
-        9. python data.py
-        (Before: Change csi3335fall2021.py to your database username and password)
-    Run flask server:
-        10. python baseball.py
+Before start:  
+        1. cd dataFile/  
+        2. cp *.csv ..   
+    Set Up Environment:  
+        3. python -m venv venv  
+        4  Linux/Mac: source venv/bin/activate  
+           Windows: venv\Scripts\activate  
+        5. pip install -r requirements.txt  
+    Create database:  
+        6. mysql -u root -p  
+        7. source KHz.sql  
+        8. exit;  
+    Load data:  
+        9. python data.py  
+        (Before: Change csi3335fall2021.py to your database username and password)  
+    Run flask server:  
+        10. python baseball.py  
     
 
 PS: 
